@@ -1,0 +1,54 @@
+ID: 								1.1
+Use case / scenario: 			    MapView
+Trigger: 				            Start the application
+Precondition: 				  		None
+Basic path:
+The user starts the application
+Exception path:
+If there is no internet connection then an error message should show. 
+Post condition:
+The Map is shown and populated with nearby objects centered around your position
+Author:								Robert Moberg
+
+
+
+ID: 								2.1
+Use case / scenario: 			    SearchView
+Trigger: 				            search option
+Precondition: 				  		The user has pressed the search button
+Basic path:
+The user makes a search with prefered options 
+Exception path:
+If there is no internet connection an error message is shown. The user stays in the search view
+Post condition:
+The search results are shown in a list.
+Author:								Simon Andersson
+
+
+
+ID: 								3.1
+Use case / scenario: 			    Profile page
+Trigger: 				            User selects to show the profile
+Precondition: 				   		The user is either in the mapView or the search result list
+Basic path:
+The user is in the mapView, clicks on a place (pub/bar/club) and then chooses to view its profile
+The user has made a search and clicks on the place in the search result. The profile is then shown.
+Exception path:
+If the internet connection is lost an error message is shown and the user is returned to the previous view.
+Post condition:
+A new view with the profile for the place is shown
+Author:								Alexander Radway
+
+
+ID: 								4.1
+Use case / scenario: 			    FriendView
+Trigger: 				            User selected the Friend tab
+Precondition: 				   		Logged onto facebook, selected Friend tab
+Basic path:
+The user selects the Friend tab
+Exception path:
+If the user is not logged onto facebook the user is prompted to log-in
+If there is no internet connection an error message is shown
+Post condition:
+A mapView is shown with icons where friends are checked-in.
+Author:							Jonas Scholander
